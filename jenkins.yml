@@ -1,0 +1,7 @@
+---
+- name: Install Jenkins
+  hosts: jenkins
+  gather_facts: False 
+  become: true
+  roles:
+    - jenkins-centos
