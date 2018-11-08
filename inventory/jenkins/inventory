@@ -1,4 +1,0 @@
-[jenkins]
-18.136.179.4  ansible_user=ec2-user
-54.251.176.137 ansible_user=ubuntu
-13.250.231.228 ansible_user=ec2-user

@@ -1,8 +1,7 @@
 ---
 - name: Install Jenkins
   hosts: jenkins
-  remote_user: '{{ansible_user}}'
-  become: true
+  gather_facts: False
+  become: yes
   roles:
-    - { role: jenkins-ubuntu, when: ansible_distribution == 'Ubuntu' }
-    - { role: jenkins-centos, when: ansible_distribution == 'Centos' }
+    - jenkins

@@ -14,7 +14,7 @@ RUN yum clean all && \
     yum -y install epel-release && \
     yum -y install bash curl less which python-pip
 
-RUN pip install ansible awscli s3cmd
+RUN pip install ansible awscli s3cmd boto boto3 botocore
 RUN mkdir /root/.aws
 
 # Expose data volume

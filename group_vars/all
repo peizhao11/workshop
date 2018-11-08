@@ -1,0 +1,8 @@
+region: ap-southeast-1
+ami: ami-085fd1bd447be68e8
+set_dns:  False
+instance: t2.micro
+keypair: zp-aws
+count: 1
+remote_user: ec2-user
+ssh_private_key_file: ~/.ssh/zp-aws.pem
